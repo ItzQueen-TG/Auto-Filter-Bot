@@ -113,13 +113,13 @@ SHORTLINK = is_enabled('SHORTLINK', False)
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True)
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001963465113")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://wooden-beulah-my-bot.koyeb.app")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
